@@ -10,6 +10,11 @@ class Result extends StatelessWidget {
 
   @override 
   Widget build(BuildContext context) {
+    var materialButton = MaterialButton( 
+        height: 60,
+              color:    Colors.greenAccent ,
+              minWidth: double.infinity,
+        onPressed:(){} );
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.greenAccent,
@@ -25,7 +30,7 @@ class Result extends StatelessWidget {
             
             Text("Genger",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),
             SizedBox(width: 30,),
-            Text(male? "Male" : "Female",  style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
+            Text(male? "Male" : "Female",  style: TextStyle(color: Colors.greenAccent,fontSize: 30,fontWeight: FontWeight.bold),),
           ],
         ),
         Row(
@@ -33,7 +38,7 @@ class Result extends StatelessWidget {
           children: [
             Text("age",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),
             SizedBox(width: 30,),
-            Text(counter2.toString(),  style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
+            Text(counter2.toString(),  style: TextStyle(color: Colors.greenAccent,fontSize: 30,fontWeight: FontWeight.bold),),
           ],
         ),
         Row(
@@ -41,12 +46,14 @@ class Result extends StatelessWidget {
           children: [
             Text("Result",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),
             SizedBox(width: 30,),
-            Text(result,  style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
+            Text(result,  style: TextStyle(color: Colors.greenAccent,fontSize: 30,fontWeight: FontWeight.bold),),
           ],
-        )
+        ),
       ],
       ),
       ),
+
+        
     );
   }
 }

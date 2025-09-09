@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'result.dart';
 class bmiScreen2 extends StatefulWidget {
@@ -204,6 +203,8 @@ late String result;
             child: Text("calcolate", style: TextStyle(color: Colors.white,fontSize:25 ,) 
             ),
             ),
+
+            SizedBox(height: 20,),
           ],
         ),
       ),
@@ -213,4 +214,3 @@ late String result;
     );
   }
 }
- 
